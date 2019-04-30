@@ -29,8 +29,6 @@ public class Item {
 		this.url = builder.url;
 		this.distance = builder.distance;
 	}
-
-	// itembuilder is static 这样就不需要一个item实例便可有itembuilder。
 	
 	public static class ItemBuilder {
 		private String itemId;
@@ -76,9 +74,6 @@ public class Item {
 		}
 		
 	}
-
-	// 如果不想要itembuild 可以给每个field提供setter
-	// 如果有setter 则ecapsulation就不好了 任意人可以修改field
 	
 	public String getItemId() {
 		return itemId;
